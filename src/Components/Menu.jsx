@@ -24,14 +24,14 @@ const Menu = () => {
   }, []);
 
   const navItems = [
-    { link: "Home", path: "/404" },
-    { link: "Service", path: "/404" },
-    { link: "About", path: "/404" },
-    { link: "FAQ", path: "/404" },
+    { link: "Home", path: "/Em-Breve" },
+    { link: "Service", path: "/Em-Breve" },
+    { link: "About", path: "/Em-Breve" },
+    { link: "FAQ", path: "/Em-Breve" },
   ];
 
   const handleWhatsAppRedirect = () => {
-    window.location.href = "/404";
+    window.location.href = "/Em-Breve";
   };
 
   return (
