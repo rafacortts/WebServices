@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components {
+    .primary-btn{
+        @apply bg-gradient-to-r from-primaryColor to-secondColor duration-300 py-2 px-6 rounded-full hover:scale-105
+    }
+
+    .second-btn{
+        @apply border border-black px-4 py-2 rounded-full
+    }
+}

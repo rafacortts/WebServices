@@ -39,7 +39,7 @@ const Menu = () => {
       <nav
         className={`py-4 lg:px-14 px-4 ${
           sticky
-            ? "sticky top-0 left-0 right-0 border-0 bg-black duration-100"
+            ? "sticky top-0 left-0 right-0 border-0 bg-white/70 backdrop-blur-md duration-100"
             : ""
         }`}
       >
@@ -53,7 +53,7 @@ const Menu = () => {
               <a
                 key={path}
                 href={path}
-                className=" f block text-base hover:text-customRed relative after:block after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 after:bg-customRed after:transition-all after:duration-500 after:ease-in-out hover:after:w-full"
+                className=" f block text-base hover:text-primaryColor relative after:block after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 after:bg-primaryColor after:transition-all after:duration-500 after:ease-in-out hover:after:w-full"
               >
                 {link}
               </a>
@@ -63,13 +63,13 @@ const Menu = () => {
           <div className="space-x-5 lg:flex hidden items-center">
             <button
               onClick={handleWhatsAppRedirect}
-              className="bg- border-2 border-customRed  py-2 px-4 transition-all duration-300 rounded-md hover:bg-transparent hover:text-black hover:border-1 hover:border-customRed"
+              className="primary-btn text-white"
             >
              Contato
             </button>
             <button
               onClick={handleWhatsAppRedirect}
-              className="bg-customRed border-2 rounded-md border-customRed text-white py-2 px-4  transition-all hover:bg-red-500 hover:border-red-500"
+              className="second-btn"
             >
               Cadastrar
             </button>
@@ -91,14 +91,14 @@ const Menu = () => {
 
         <div
           className={`space-y-4 px-4 mt-16 py-7  ${
-            menuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
+            menuOpen ? "block fixed top-0 right-0 left-0 bg-white" : "hidden"
           }`}
         >
           {navItems.map(({ link, path }) => (
             <a
               key={path}
               href={path}
-              className="block text-base hover:text-customRed"
+              className="block text-base  hover:secondColor"
               onClick={() => setMenuOpen(false)} // Close the menu on click
             >
               {link}

@@ -12,11 +12,19 @@ export default {
     extend: {
       colors: {
         customRed: '#EA1D2C',
+        primaryColor: "#00C2FF",
+        secondColor:"#DD08FF"
       },
       fontFamily: {
         sans : ["Poppins" , "Sans-serif"]
-
       } ,
+      container: {
+        center : true,
+        padding: {
+          default:"1rem",
+          sm:"10rem"
+        }
+      } 
     },
   },
 

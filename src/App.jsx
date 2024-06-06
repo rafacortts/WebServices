@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./index.css";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
-import Produto from "./Components/Error404";
+import EmBreve from "./Components/Error404";
 import Home from "./Pages/Home"
+import Erro from "./Pages/Erro"
 
 
 
@@ -13,7 +14,7 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/Em-Breve" element={<Produto/>}/>
+      <Route path="/Em-Breve" element={<Erro/>}/>
       </Routes>
       </BrowserRouter>
     </>
