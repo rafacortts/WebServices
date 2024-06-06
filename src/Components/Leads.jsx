@@ -14,10 +14,7 @@ const Leads = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae impedit amet officia exercitationem aliquid odit. Beatae
-              distinctio obcaecati enim at dolore iste animi asperiores
-              exercitationem, ipsum dolorem eveniet. Assumenda, quas.
+              Sua primeira venda pode ser mais rápida do que você imagina
             </motion.h1>
             <motion.div
               className="mt-5 pb-10"

@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Teste from "../Img/teste.jpg";
 import { MdOndemandVideo } from "react-icons/md";
-import { CiCirclePlus } from "react-icons/ci";
+import { FiUser } from "react-icons/fi";
+
 
 const Hero = () => {
   return (
@@ -19,8 +20,10 @@ const Hero = () => {
                 transition={{ duration: 0.5 }}
               >
                 <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit {" "}
-                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primaryColor to-secondColor">Voluptates, numquam.</span> 
+                  Transformamos sonhos em realidade, levando sucesso de forma{" "}
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primaryColor to-secondColor">
+                     simples, confiável e lucrativa.
+                  </span>
                 </h1>
               </motion.h1>
               <motion.p
@@ -28,8 +31,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,
-                velit?
+               Impulsione seus produtos e serviços digitais — com a menor taxa do mercado.   
               </motion.p>
               <motion.div
                 className="flex items-center space-x-5 justify-center sm:justify-start"
@@ -38,10 +40,13 @@ const Hero = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <Link to={"/Em-Breve"} className="primary-btn text-white">
-                Contato
+                  Começe Agora
                 </Link>
-                <Link to={"/Em-Breve"} className="second-btn flex items-center gap-2">
-                  <MdOndemandVideo className="" /> Veja Mais
+                <Link
+                  to={"/Em-Breve"}
+                  className="second-btn flex items-center gap-2"
+                >
+                  <MdOndemandVideo className="" /> Saiba Mais
                 </Link>
               </motion.div>
             </div>

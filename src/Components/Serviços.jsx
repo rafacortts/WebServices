@@ -3,19 +3,20 @@ import { motion } from "framer-motion";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
 import { GrSecure } from "react-icons/gr";
+import { FaArrowTrendDown, FaArrowTrendUp} from "react-icons/fa6";
 
 const ServicesData = [
   {
     id: 1,
     heading: "Menores Taxas do Mercado",
     text: "Tenha acesso as menores Taxas do Mercado e Impulsione suas vendas.",
-    icon: <GrSecure className="text-6xl" />,
+    icon: <FaArrowTrendDown className="text-6xl" />,
   },
   {
     id: 2,
     heading: "Impulsione suas Vendas",
     text: "Investir em landing pages  é essencial para aumentar suas conversões e maximizar o retorno sobre o investimento.",
-    icon: <FaRegUser className="text-6xl" />,
+    icon: <FaArrowTrendUp className="text-6xl" />,
   },
   {
     id: 3,

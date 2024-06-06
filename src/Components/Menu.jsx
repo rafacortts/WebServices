@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaTimes, FaBars } from "react-icons/fa";
+import { FiUser } from 'react-icons/fi';
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -63,14 +64,14 @@ const Menu = () => {
           <div className="space-x-5 lg:flex hidden items-center">
             <button
               onClick={handleWhatsAppRedirect}
-              className="primary-btn text-white"
+              className="second-btn "
             >
-             Contato
+             Login
             </button>
             <button
               onClick={handleWhatsAppRedirect}
-              className="second-btn"
-            >
+              className="primary-btn flex items-center gap-3 text-white font-medium"
+            ><FiUser />
               Cadastrar
             </button>
           </div>
