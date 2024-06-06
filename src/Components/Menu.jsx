@@ -24,7 +24,7 @@ const Menu = () => {
   }, []);
 
   const navItems = [
-    { link: "Home", path: "/Em-Breve" },
+    { link: "Home", path: "/" },
     { link: "Service", path: "/Em-Breve" },
     { link: "About", path: "/Em-Breve" },
     { link: "FAQ", path: "/Em-Breve" },
@@ -35,7 +35,7 @@ const Menu = () => {
   };
 
   return (
-    <header className="w-full bg-white fixed top-0 left-0 right-0 border-b border-gray-200 ">
+    <header className="w-full bg-white fixed top-0 left-0 right-0 border-b border-slate-200 ">
       <nav
         className={`py-4 lg:px-14 px-4 ${
           sticky
