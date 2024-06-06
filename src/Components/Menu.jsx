@@ -45,7 +45,7 @@ const Menu = () => {
       >
         <div className="flex justify-between items-center text-base gap-8">
           <a href="#" className="text-2xl flex items-center space-x-3">
-            SuaLogoAqui
+            WebServices
           </a>
 
           <ul className="md:flex space-x-12 hidden">
