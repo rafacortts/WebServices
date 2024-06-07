@@ -15,13 +15,13 @@ const ServicesData = [
   {
     id: 2,
     heading: "Impulsione suas Vendas",
-    text: "Investir em landing pages  é essencial para aumentar suas conversões e maximizar o retorno sobre o investimento.",
+    text: "Investir em landing pages  é essencial para aumentar suas Vendaas",
     icon: <FaArrowTrendUp className="text-6xl" />,
   },
   {
     id: 3,
     heading: "Alta Retenção de Leads",
-    text: "Investir em landing pages  é essencial para aumentar suas conversões e maximizar o retorno sobre o investimento.",
+    text: "Investir em landing pages  é essencial para aumentar suas conversões.",
     icon: <MdOutlineRocketLaunch className="text-6xl" />,
   },
   {

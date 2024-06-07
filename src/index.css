@@ -16,3 +16,35 @@
         @apply border border-white px-5 py-2 rounded-full
     }
 }
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* ajuste conforme necessário */
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  

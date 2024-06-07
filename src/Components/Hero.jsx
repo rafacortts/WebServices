@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Teste from "../Img/teste.jpg";
 import { MdOndemandVideo } from "react-icons/md";
-import { FiUser } from "react-icons/fi";
+
 
 
 const Hero = () => {
