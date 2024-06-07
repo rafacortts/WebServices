@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MdOutlineRocketLaunch } from "react-icons/md";
-import { FaRegUser } from "react-icons/fa";
-import { GrSecure } from "react-icons/gr";
 import { FaArrowTrendDown, FaArrowTrendUp} from "react-icons/fa6";
+import { FaFunnelDollar } from "react-icons/fa";
 
 const ServicesData = [
   {
@@ -22,7 +21,7 @@ const ServicesData = [
     id: 3,
     heading: "Alta Retenção de Leads",
     text: "Investir em landing pages  é essencial para aumentar suas conversões.",
-    icon: <MdOutlineRocketLaunch className="text-6xl" />,
+    icon: <FaFunnelDollar className="text-6xl" />,
   },
   {
     id: 4,

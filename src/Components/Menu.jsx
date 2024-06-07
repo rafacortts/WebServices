@@ -100,7 +100,7 @@ const Menu = () => {
               key={path}
               href={path}
               className="block text-base  hover:secondColor"
-              onClick={() => setMenuOpen(false)} // Close the menu on click
+              onClick={() => setMenuOpen(false)} 
             >
               {link}
             </a>

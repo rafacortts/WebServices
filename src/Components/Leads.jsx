@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Teste from "../Img/LandPage1.png";
 import Teste2 from "../Img/LandPage2.png";
+import { FaArrowRight } from "react-icons/fa";
+
 
 const Leads = () => {
   return (
     <div className="bg-gradient-to-r from-primaryColor to-secondColor">
       <div className="container mx-auto px-4 py-0 sm:py-0">
         <div className="flex flex-col items-center text-center">
-          <div className="mt-12 gap-6 min-h-[500px] items-center space-y-6">
+          <div className="mt-12 gap-6 min-h-[700px] items-center space-y-6">
             <motion.h1
               className="text-white text-4xl font-semibold"
               initial={{ opacity: 0, y: 20 }}
@@ -25,7 +27,7 @@ const Leads = () => {
               transition={{ duration: 0.5 }}
             >
               <p className="text-white text-lg">
-                No mundo digital de hoje, a velocidade é crucial. A primeira venda, aquele momento emocionante que valida seu esforço e paixão, pode estar muito mais próxima do que você imagina. E nós, especialistas em criação de sites e landing pages, estamos aqui para acelerar esse processo. Imagine ter um site profissional e uma landing page eficaz, ambos projetados para atrair e converter clientes de maneira eficiente. É exatamente isso que oferecemos: soluções digitais sob medida que colocam seu negócio à frente da concorrência.
+                No mundo digital de hoje, a velocidade é crucial. A primeira venda, aquele momento emocionante que valida seu esforço e paixão, pode estar muito mais próxima do que você imagina. E nós, especialistas em criação de sites e landing pages, estamos aqui para acelerar esse processo. Imagine ter um site profissional ou landing page eficaz, ambos projetados para atrair e converter clientes de maneira eficiente. É exatamente isso que oferecemos: soluções digitais sob medida que colocam seu negócio à frente da concorrência.
               </p>
             </motion.div>
             <motion.div
@@ -42,7 +44,8 @@ const Leads = () => {
                 />
                 <div className="overlay">
                   <div>
-                    <span>Projeto Astra</span>
+                    <Link to={"/Em-Breve"} className="font-bold text-3xl hover:underline">Projeto Astra</Link>
+                    
                     <p>Um site inovador focado em soluções tecnológicas.</p>
                   </div>
                 </div>
@@ -55,7 +58,8 @@ const Leads = () => {
                 />
                 <div className="overlay">
                   <div>
-                    <span>Projeto Hoppers</span>
+                  <Link to={"/Em-Breve"} className="font-bold text-3xl hover:underline">Projeto Hoppers</Link>
+
                     <p>Uma landing page que maximiza conversões.</p>
                   </div>
                 </div>
