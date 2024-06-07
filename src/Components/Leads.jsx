@@ -41,7 +41,10 @@ const Leads = () => {
                   className="object-cover"
                 />
                 <div className="overlay">
-                  <span>Nome do Projeto 1</span>
+                  <div>
+                    <span>Projeto Astra</span>
+                    <p>Um site inovador focado em soluções tecnológicas.</p>
+                  </div>
                 </div>
               </div>
               <div className="image-container">
@@ -51,7 +54,10 @@ const Leads = () => {
                   className="object-cover"
                 />
                 <div className="overlay">
-                  <span>Nome do Projeto 2</span>
+                  <div>
+                    <span>Projeto Hoppers</span>
+                    <p>Uma landing page que maximiza conversões.</p>
+                  </div>
                 </div>
               </div>
             </motion.div>

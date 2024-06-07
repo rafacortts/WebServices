@@ -13,6 +13,7 @@ const Home = () =>{
         <Hero/>
         <Services/>
         <Leads/>
+        <Services/>
         </>
     )
 };

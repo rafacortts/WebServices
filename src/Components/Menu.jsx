@@ -36,7 +36,7 @@ const Menu = () => {
   };
 
   return (
-    <header className="w-full bg-white fixed top-0 left-0 right-0 border-b border-slate-200 ">
+    <header className={`w-full bg-white fixed top-0 left-0 right-0 border-b border-slate-200 ${sticky ? 'header-fixed' : ''}`} style={{ zIndex: 1000 }}>
       <nav
         className={`py-4 lg:px-14 px-4 ${
           sticky
