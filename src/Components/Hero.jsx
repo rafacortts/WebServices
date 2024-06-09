@@ -43,7 +43,7 @@ const Hero = () => {
                   Começe Agora
                 </Link>
                 <Link
-                  to={"/Em-Breve"}
+                  to={"/Saiba-Mais"}
                   className="second-btn flex items-center gap-2"
                 >
                   <MdOndemandVideo className="" /> Saiba Mais

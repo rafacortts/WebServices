@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaTimes, FaBars } from "react-icons/fa";
 import { FiUser } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -45,9 +46,9 @@ const Menu = () => {
         }`}
       >
         <div className="flex justify-between items-center text-base gap-8">
-          <a href="#" className="text-2xl flex items-center space-x-3">
-            WebServices
-          </a>
+         <Link to={"/"} className='text-2xl flex items-center space-x-3'>
+         WebServices
+         </Link>
 
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
