@@ -67,6 +67,13 @@
     margin-top: 10px;
     text-align: center;
   }
+
+
+  :root {
+    --primaryColor: #00C2FF; /* Exemplo de cor primária */
+    --secondColor: #DD08FF;  /* Exemplo de cor secundária */
+  }
+  
   
 
   
