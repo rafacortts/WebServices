@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Home from "./Pages/Home"
 import Erro from "./Pages/Erro"
 import SaibaMais from "./Pages/SaibaMais";
+import TermosPrivacidade from './Pages/TermosPrivicade'
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/Em-Breve" element={<Erro/>}/>
+      <Route path="/Privacidade" element={<TermosPrivacidade/>}/>
       <Route path="/Saiba-Mais" element={<SaibaMais/>}/>
       </Routes>
       </BrowserRouter>
