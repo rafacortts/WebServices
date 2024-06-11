@@ -3,7 +3,7 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4 sm:px-6 lg:px-8 mt-6">
-      <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg border-2 border-black">
+      <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg border-x border-slate-200"> 
         <h1 className="text-2xl font-bold mb-4">Política de Privacidade - WebServices</h1>
         <p className="mb-4">Data de Vigência: 11 de junho de 2024</p>
 

@@ -28,8 +28,8 @@ const Menu = () => {
   const navItems = [
     { link: "Home", path: "/" },
     { link: "Service", path: "/Em-Breve" },
-    { link: "About", path: "/Em-Breve" },
-    { link: "FAQ", path: "/Em-Breve" },
+    { link: "About", path: "/Saiba-Mais" },
+    { link: "FAQ", path: "/Privacidade" },
   ];
 
   const handleWhatsAppRedirect = () => {
