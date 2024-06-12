@@ -26,9 +26,10 @@ const Menu = () => {
   }, []);
 
   const navItems = [
-    { link: "Home", path: "/" },
-    { link: "Service", path: "/Em-Breve" },
-    { link: "About", path: "/Saiba-Mais" },
+    { link: "Início", path: "/" },
+    { link: "Serviços", path: "/Em-Breve" },
+    { link: "Projetos", path: "/Em-Breve" },
+    { link: "Sobre", path: "/Saiba-Mais" },
     { link: "FAQ", path: "/Privacidade" },
   ];
 

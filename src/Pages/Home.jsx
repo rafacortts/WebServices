@@ -5,6 +5,7 @@ import Garantias from "../Components/Garantias";
 import React from "react";
 import Services from "../Components/Serviços";
 import CookieConsent from "react-cookie-consent";
+import Ofers from "../Components/Ofers"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Services />
       <Leads />
       <Garantias />
+      <Ofers/>
       <CookieConsent
         location="none"
         buttonText="Aceitar Todos"

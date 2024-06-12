@@ -57,7 +57,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <img
-                src={Teste}
+                src="https://via.placeholder.com/400x400"
                 alt="Hero"
                 className="w-full h-auto rounded-lg"
               />

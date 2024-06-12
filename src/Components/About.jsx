@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center mt-16 p-4">
-      <div className="container max-w-4xl text-center p-8  rounded-md">
+    <div className="min-h-screen flex items-center justify-center mt-10 p-4 ">
+      <div className="container max-w-4xl text-center p-8  rounded-md bg-white border border-slate-200">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 ">
           Impulsionamos suas vendas e seu posicionamento digital com o <span className="bg-clip-text text-transparent bg-gradient-to-r from-primaryColor to-secondColor">
            menor preço do mercado </span> 
