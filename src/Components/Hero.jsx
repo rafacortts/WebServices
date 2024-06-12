@@ -39,7 +39,7 @@ const Hero = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <Link to={"/Em-Breve"} className="primary-btn text-white">
+                <Link to={"/Login"} className="primary-btn text-white">
                   Começe Agora
                 </Link>
                 <Link
