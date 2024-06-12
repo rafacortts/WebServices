@@ -33,7 +33,7 @@ const Menu = () => {
   ];
 
   const handleWhatsAppRedirect = () => {
-    window.location.href = "/Em-Breve";
+    window.location.href = "/Login";
   };
 
   return (
