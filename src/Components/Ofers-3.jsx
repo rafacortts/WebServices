@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaSms, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaSms, FaWhatsapp, FaCheckCircle, FaFileInvoiceDollar, FaPaperPlane, FaEye } from "react-icons/fa";
 
 const SalesRecovery = () => {
   return (
-    <div className="mt-6 bg-white p-4 sm:p-8 rounded-xl shadow-lg max-w-2xl mx-auto border border-slate-300">
+    <div className="mt-12 bg-white p-4 sm:p-8 rounded-xl shadow-lg max-w-2xl mx-auto border border-slate-300 mb-10 ">
       <div className="space-y-6">
         <motion.div
           className="flex flex-col justify-between items-center text-center"
@@ -48,22 +48,28 @@ const SalesRecovery = () => {
         >
           <div className="space-y-2 sm:space-y-4">
             <div className="flex justify-between items-center">
-              <span className="font-medium text-gray-900">
-                Cobrança criada para Tulio Caldas
+              <span className="font-medium text-gray-900 flex items-center">
+                <FaCheckCircle className="text-primaryColor mr-2" /> Cobrança criada para Rafael Cortes
               </span>
-              <span className="text-sm text-gray-500">22/11/2023 11:55</span>
+              <span className="text-sm text-gray-500">10/06/2024 11:55</span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-gray-900">Mensagem enviada</span>
-              <span className="text-sm text-gray-500">25/11/2023 19:12</span>
+              <span className="text-gray-900 flex items-center">
+                <FaCheckCircle className="text-primaryColor mr-2" /> Mensagem enviada
+              </span>
+              <span className="text-sm text-gray-500">10/06/2024 19:12</span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-gray-900">Mensagem visualizada</span>
-              <span className="text-sm text-gray-500">25/11/2023 19:13</span>
+              <span className="text-gray-900 flex items-center">
+                <FaCheckCircle className="text-primaryColor mr-2" /> Mensagem visualizada
+              </span>
+              <span className="text-sm text-gray-500">12/06/2024 19:13</span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-gray-900">Pagamento aprovado</span>
-              <span className="text-sm text-gray-500">25/11/2023 19:15</span>
+              <span className="text-gray-900 flex items-center">
+                <FaCheckCircle className="text-green-500 mr-2" /> Pagamento aprovado
+              </span>
+              <span className="text-sm text-gray-500">12/06/2024 19:15</span>
             </div>
           </div>
         </motion.div>
