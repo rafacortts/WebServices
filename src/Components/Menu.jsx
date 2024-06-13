@@ -31,6 +31,7 @@ const Menu = () => {
     { link: "Projetos", path: "/Em-Breve" },
     { link: "Sobre", path: "/Saiba-Mais" },
     { link: "FAQ", path: "/Privacidade" },
+    { link: "Login", path: "/Login" },
   ];
 
   const handleWhatsAppRedirect = () => {
