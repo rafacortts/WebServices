@@ -7,6 +7,7 @@ import Services from "../Components/Serviços";
 import CookieConsent from "react-cookie-consent";
 import Ofers from "../Components/Ofers"
 import Ofers2 from "../Components/Ofers-2"
+import Ofers3 from "../Components/Ofers-3"
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Garantias />
       <Ofers/>
       <Ofers2/>
+      <Ofers3/>
       <CookieConsent
         location="none"
         buttonText="Aceitar Todos"
