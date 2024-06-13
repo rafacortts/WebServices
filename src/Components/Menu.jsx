@@ -31,7 +31,6 @@ const Menu = () => {
     { link: "Projetos", path: "/Em-Breve" },
     { link: "Sobre", path: "/Saiba-Mais" },
     { link: "FAQ", path: "/Privacidade" },
-    { link: "Login", path: "/Login" },
   ];
 
   const handleWhatsAppRedirect = () => {
@@ -48,66 +47,85 @@ const Menu = () => {
         }`}
       >
         <div className="flex justify-between items-center text-base gap-8">
-         <Link to={"/"} className='text-2xl flex items-center space-x-3'>
-         WebServices
-         </Link>
+          <Link to={"/"} className='text-2xl flex items-center space-x-3'>
+            WebServices
+          </Link>
 
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
-              <a
+              <Link
                 key={path}
-                href={path}
-                className=" f block text-base hover:text-primaryColor relative after:block after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 after:bg-primaryColor after:transition-all after:duration-500 after:ease-in-out hover:after:w-full"
+                to={path}
+                className="text-base hover:text-primaryColor relative after:block after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 after:bg-primaryColor after:transition-all after:duration-500 after:ease-in-out hover:after:w-full"
+                onClick={() => setMenuOpen(false)}
               >
                 {link}
-              </a>
+              </Link>
             ))}
           </ul>
 
           <div className="space-x-5 lg:flex hidden items-center">
             <button
               onClick={handleWhatsAppRedirect}
-              className="second-btn "
+              className="second-btn"
             >
-             Login
+              Login
             </button>
             <button
               onClick={handleWhatsAppRedirect}
-              className="primary-btn flex items-center gap-3 text-white font-medium"
-            ><FiUser />
-              Cadastrar
+              className="primary-btn flex items-center gap-1.5 text-white font-medium"
+            >
+              <FiUser className="text-lg" />
+              <span>Cadastrar</span>
             </button>
           </div>
 
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className=" focus:outline-none"
+              className="focus:outline-none"
             >
               {menuOpen ? (
                 <FaTimes className="h-6 w-6" />
               ) : (
-                <FaBars className="h-6 w-6" />
+                <FaBars className="h-6 w-6 " />
               )}
             </button>
           </div>
         </div>
 
         <div
-          className={`space-y-4 px-4 mt-16 py-7  ${
+          className={`space-y-4 px-4 mt-16 py-7 ${
             menuOpen ? "block fixed top-0 right-0 left-0 bg-white" : "hidden"
           }`}
         >
           {navItems.map(({ link, path }) => (
-            <a
+            <Link
               key={path}
-              href={path}
-              className="block text-base  hover:secondColor"
-              onClick={() => setMenuOpen(false)} 
+              to={path}
+              className="block text-base hover:secondColor"
+              onClick={() => setMenuOpen(false)}
             >
               {link}
-            </a>
+            </Link>
           ))}
+
+          {/* Botões de Login e Cadastro no menu mobile */}
+          <div className="flex flex-col items-center mt-4">
+            <button
+              onClick={handleWhatsAppRedirect}
+              className="second-btn w-full flex items-center mb-3"
+            >
+              Login
+            </button>
+            <button
+              onClick={handleWhatsAppRedirect}
+              className="primary-btn w-full flex items-center gap-1.5 text-white font-medium"
+            >
+              <FiUser className="text-lg" />
+              <span>Cadastrar</span>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
