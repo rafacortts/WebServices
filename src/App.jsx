@@ -5,6 +5,7 @@ import Erro from "./Pages/Erro";
 import SaibaMais from "./Pages/SaibaMais";
 import TermosPrivacidade from "./Pages/TermosPrivicade";
 import LoginCadastro from "./Pages/LoginCadastro"
+import Dashboard from "./Pages/Dashboard"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/Privacidade" element={<TermosPrivacidade />} />
             <Route path="/Saiba-Mais" element={<SaibaMais />} />
             <Route path="/Login" element={<LoginCadastro />} />
+            <Route path="/DashBoard" element={<Dashboard />} />
           </Routes>
         </BrowserRouter>
  

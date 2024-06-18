@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FiAlertCircle } from "react-icons/fi"; // Importando o ícone de erro do react-icons
 import { MdError } from "react-icons/md";
 
 const Login = () => {
@@ -11,17 +10,17 @@ const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [acceptTerms, setAcceptTerms] = useState(false);
   const [error, setError] = useState(null); // Estado para armazenar mensagens de erro
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Implementar lógica de login aqui
-    try {
-      console.log("Email:", email);
-      console.log("Password:", password);
-      // Simulação de erro
-      throw new Error("Usuário Não Encontrado.");
-    } catch (err) {
-      setError(err.message);
+    const defaultEmail = "usuario@exemplo.com";
+    const defaultPassword = "senha123";
+
+    if (email === defaultEmail && password === defaultPassword) {
+      navigate("/Dashboard"); // Substitua '/next-page' pelo caminho da próxima página
+    } else {
+      setError("Usuário ou senha incorretos.");
     }
   };
 
@@ -33,7 +32,7 @@ const Login = () => {
       console.log("Password:", password);
       console.log("Phone Number:", phoneNumber);
       // Simulação de erro
-      throw new Error("Verifique os campos e tente novamente.");
+      throw new Error("Sistema de Cadastro Indisponível tente novamente mais tarde.");
     } catch (err) {
       setError(err.message);
     }
@@ -180,7 +179,7 @@ const Login = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full relative">
             <button
               onClick={closeErrorPopup}
-              className="absolute top-2 right-3   text-gray-400 hover:text-black"
+              className="absolute top-2 right-3 text-gray-400 hover:text-black"
             >
               &times;
             </button>
@@ -190,8 +189,8 @@ const Login = () => {
             </div>
             <p>{error}</p>
             <div className="flex justify-center">
-              <Link to={"/Em-Breve"}
-                
+              <Link to={"/"}
+                onClick={closeErrorPopup} 
                 className="mt-4 primary-btn text-white "
               >
                 Fechar
