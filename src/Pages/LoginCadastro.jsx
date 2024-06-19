@@ -18,7 +18,7 @@ const Login = () => {
     const defaultPassword = "senha123";
 
     if (email === defaultEmail && password === defaultPassword) {
-      navigate("/Dashboard"); // Substitua '/next-page' pelo caminho da próxima página
+      navigate("/Dashboard");// Substitua '/next-page' pelo caminho da próxima página
     } else {
       setError("Usuário ou senha incorretos.");
     }

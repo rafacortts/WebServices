@@ -8,7 +8,7 @@ export default function Header() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white h-16 px-4 flex items-center border-b border-gray-200 justify-between">
+    <div className="bg-white h-16 px-4 flex items-center border-b border-gray-200 justify-between pb-2">
       <div className="relative flex-1">
         <HiOutlineSearch
           fontSize={20}
@@ -16,7 +16,7 @@ export default function Header() {
         />
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="Pesquise..."
           className="text-sm focus:outline-none active:outline-none border border-gray-300 w-full md:w-72 h-10 pl-11 pr-4 rounded-sm"
         />
       </div>
@@ -43,7 +43,7 @@ export default function Header() {
               >
                 <Popover.Panel className="absolute right-0 z-10 mt-2.5 transform w-72">
                   <div className="bg-white rounded-sm shadow-md ring-1 ring-black ring-opacity-5 px-2 py-2.5">
-                    <strong className="text-gray-700 font-medium">Messages</strong>
+                    <strong className="text-gray-700 font-medium">Menssages</strong>
                     <div className="mt-2 py-1 text-sm">This is messages panel.</div>
                   </div>
                 </Popover.Panel>
@@ -73,7 +73,7 @@ export default function Header() {
               >
                 <Popover.Panel className="absolute right-0 z-10 mt-2.5 transform w-80">
                   <div className="bg-white rounded-sm shadow-md ring-1 ring-black ring-opacity-5 px-2 py-2.5">
-                    <strong className="text-gray-700 font-medium">Notifications</strong>
+                    <strong className="text-gray-700 font-medium">Notificações</strong>
                     <div className="mt-2 py-1 text-sm">This is notification panel.</div>
                   </div>
                 </Popover.Panel>
