@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Teste from "../Img/teste.jpg";
+import HomeImg from "../Img/HeroImageBG.png"
 import { MdOndemandVideo } from "react-icons/md";
 
 
@@ -57,9 +57,9 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <img
-                src="https://via.placeholder.com/400x400"
+                src={HomeImg}
                 alt="Hero"
-                className="w-full h-auto rounded-lg"
+                className=" w-full h-full"
               />
             </motion.div>
           </div>

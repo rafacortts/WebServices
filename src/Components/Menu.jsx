@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
-import { FiUser } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { FiUser } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import Logo from "../Img/Logo.png";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,7 +39,12 @@ const Menu = () => {
   };
 
   return (
-    <header className={`w-full bg-white fixed top-0 left-0 right-0 border-b border-slate-200 ${sticky ? 'header-fixed' : ''}`} style={{ zIndex: 1000 }}>
+    <header
+      className={`w-full bg-white fixed top-0 left-0 right-0 border-b border-slate-200 ${
+        sticky ? "header-fixed" : ""
+      }`}
+      style={{ zIndex: 1000 }}
+    >
       <nav
         className={`py-4 lg:px-14 px-4 ${
           sticky
@@ -47,10 +53,13 @@ const Menu = () => {
         }`}
       >
         <div className="flex justify-between items-center text-base gap-8">
-          <Link to={"/"} className='text-2xl flex items-center space-x-3'>
-            WebServices
+          <Link
+            to={"/"}
+            className="text-2xl flex items-center space-x-3 text-center"
+          >
+            <img src={Logo} alt="Logo" className="h-10" />{" "}
+            {/* Adicione o logo aqui */}
           </Link>
-
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
               <Link
@@ -65,10 +74,7 @@ const Menu = () => {
           </ul>
 
           <div className="space-x-5 lg:flex hidden items-center">
-            <button
-              onClick={handleWhatsAppRedirect}
-              className="second-btn"
-            >
+            <button onClick={handleWhatsAppRedirect} className="second-btn">
               Login
             </button>
             <button
@@ -81,10 +87,7 @@ const Menu = () => {
           </div>
 
           <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="focus:outline-none"
-            >
+            <button onClick={toggleMenu} className="focus:outline-none">
               {menuOpen ? (
                 <FaTimes className="h-6 w-6" />
               ) : (
@@ -111,18 +114,18 @@ const Menu = () => {
           ))}
 
           {/* Botões de Login e Cadastro no menu mobile */}
-          <div className="flex flex-col items-center mt-4">
+          <div className=" items-center mt-4">
             <button
               onClick={handleWhatsAppRedirect}
-              className="second-btn w-full flex items-center mb-3"
+              className="second-btn   mb-3"
             >
               Login
             </button>
             <button
               onClick={handleWhatsAppRedirect}
-              className="primary-btn w-full flex items-center gap-1.5 text-white font-medium"
+              className="primary-btn  flex  gap-1.5 text-white font-medium"
             >
-              <FiUser className="text-lg" />
+              <FiUser className="text-lg " />
               <span>Cadastrar</span>
             </button>
           </div>
