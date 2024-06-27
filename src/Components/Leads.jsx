@@ -45,7 +45,8 @@ const Leads = () => {
             <div className="flex justify-center">
               <Link
                 to="/Em-Breve"
-                className="third-btn text-white flex items-center hover:underline"
+                className="third-btn text-white flex items-center hover:underline gap-2
+                "
               >
                 Veja Mais <FaArrowRight className="ml-1" />
               </Link>

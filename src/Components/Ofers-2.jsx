@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -15,9 +16,9 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <span className="text-white">
-                  Facilitamos suas vendas e Impulsionamos seu negócio 
-                </span>
+                <h1 className="text-white text-4xl font-semibold mb-4">
+                Tenha seu própio sistema de assinatura
+                </h1>
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 50 }}
@@ -30,17 +31,17 @@ const Hero = () => {
                 seus clientes.
               </motion.p>
               <motion.div
-                className="flex items-center space-x-5 justify-center sm:justify-start"
+                className="flex items-center space-x-5 justify-center sm:justify-start "
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <Link 
                   to="/Login" 
-                  className="third-btn text-white"
+                  className="third-btn text-white flex items-center gap-2"
                   aria-label="Começe Agora"
                 >
-                  Começe Agora
+                  Começe Agora <FaArrowRight className="ml-1" />
                 </Link>
               </motion.div>
             </div>

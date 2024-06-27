@@ -6,6 +6,8 @@ import SaibaMais from "./Pages/SaibaMais";
 import TermosPrivacidade from "./Pages/TermosPrivicade";
 import LoginCadastro from "./Pages/LoginCadastro"
 import Dashboard from "./Pages/Dashboard"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {

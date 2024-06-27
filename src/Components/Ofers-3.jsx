@@ -1,81 +1,49 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { FaEnvelope, FaSms, FaWhatsapp, FaCheckCircle, FaFileInvoiceDollar, FaPaperPlane, FaEye } from "react-icons/fa";
+import { CiCreditCard1 } from "react-icons/ci";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { LuUsers2 } from "react-icons/lu";
+import { IoBagCheckOutline } from "react-icons/io5";
+import { PiHandshake } from "react-icons/pi";
+import { SiFastapi } from "react-icons/si";
+import { TfiWorld } from "react-icons/tfi";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import { SlScreenSmartphone } from "react-icons/sl";
 
-const SalesRecovery = () => {
+import React from "react";
+
+const features = [
+  { icon: <CiCreditCard1 />, text: "Receba cartão e Pix em até 2 dias" },
+  { icon: <SiFastapi />, text: "Liberação do produto imediata" },
+  { icon: <IoBagCheckOutline />, text: "Checkout builder" },
+  { icon: <PiHandshake />, text: "Co-produção" },
+  { icon: <TfiWorld/>, text: "Marketplace de Afiliados" },
+  { icon: <LuUsers2/>, text: "Área de membros personalizável" },
+  { icon: <SlScreenSmartphone/>, text: "Mobile app " },
+  { icon: <HiOutlineRocketLaunch/>, text: "E muito mais…" },
+];
+
+const Kiwify = () => {
   return (
-    <div className="mt-12 bg-white p-4 sm:p-8 rounded-xl shadow-lg max-w-2xl mx-auto border border-slate-300 mb-10 ">
-      <div className="space-y-6">
-        <motion.div
-          className="flex flex-col justify-between items-center text-center"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-4xl sm:text-4xl  mb-4">
-            Recuperador de Vendas
-          </h2>
-          <div className="flex justify-center space-x-2 sm:space-x-4 mt-4">
-            <span className="bg-transparent border border-black text-black py-2 px-4 rounded-lg flex items-center space-x-2">
-              <FaEnvelope />
-              <span>Email</span>
-            </span>
-            <span className="bg-transparent border border-black text-black py-2 px-4 rounded-lg flex items-center space-x-2">
-              <FaSms />
-              <span>SMS</span>
-            </span>
-            <span className="bg-transparent border border-black text-black py-2 px-4 rounded-lg flex items-center space-x-2">
-              <FaWhatsapp />
-              <span>WhatsApp</span>
-            </span>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-8">
+      <h1 className="text-4xl mb-2 text-center">
+        A WebServices tem a melhor tecnologia
+      </h1>
+      <p className="mb-4 text-center">
+        Nossa plataforma é simples e fácil de usar. Crie uma conta e comece a
+        vender em 2 minutos.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="bg-white p-6 rounded-md shadow-lg text-center border-2 w-56 h-56 flex flex-col items-center justify-center"
+          >
+            <div className="text-4xl mb-4 text-primaryColor">{feature.icon}</div>
+            <p className="text-lg">{feature.text}</p>
           </div>
-        </motion.div>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-base sm:text-lg text-gray-700"
-        >
-          Evite que seu cliente esqueça de pagar em dia, nosso recuperador envia
-          mensagens relevantes para os seus clientes, o que aumenta as chances
-          de conversão.
-        </motion.p>
-        <motion.div
-          className="bg-gray-50 p-4 sm:p-6 rounded-lg border border-gray-200"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-        >
-          <div className="space-y-2 sm:space-y-4">
-            <div className="flex justify-between items-center">
-              <span className="font-medium text-gray-900 flex items-center">
-                <FaCheckCircle className="text-primaryColor mr-2" /> Cobrança criada para Rafael Cortes
-              </span>
-              <span className="text-sm text-gray-500">10/06/2024 11:55</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-gray-900 flex items-center">
-                <FaCheckCircle className="text-primaryColor mr-2" /> Mensagem enviada
-              </span>
-              <span className="text-sm text-gray-500">10/06/2024 19:12</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-gray-900 flex items-center">
-                <FaCheckCircle className="text-primaryColor mr-2" /> Mensagem visualizada
-              </span>
-              <span className="text-sm text-gray-500">12/06/2024 19:13</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-gray-900 flex items-center">
-                <FaCheckCircle className="text-green-500 mr-2" /> Pagamento aprovado
-              </span>
-              <span className="text-sm text-gray-500">12/06/2024 19:15</span>
-            </div>
-          </div>
-        </motion.div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default SalesRecovery;
+export default Kiwify;
