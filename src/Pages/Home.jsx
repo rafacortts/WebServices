@@ -8,6 +8,7 @@ import CookieConsent from "react-cookie-consent";
 import Ofers from "../Components/Ofers"
 import Ofers2 from "../Components/Ofers-2"
 import Ofers3 from "../Components/Ofers-3"
+import Ofers4 from "../Components/ofers-4"
 import MyFooter from "../Components/Footer"
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <Ofers/>
       <Ofers2/>
       <Ofers3/>
+      <Ofers4/>
       <MyFooter/>
       <CookieConsent
         location="none"

@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import { Link } from 'react-router-dom';
+
 
 const Lps = () => {
   const beneficios = [
@@ -31,9 +31,6 @@ const Lps = () => {
       <h2 className="text-4xl text-center">
         Ter sua loja online é mais simples do que você imagina
       </h2>
-      <p className="text-center mt-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aliquam.
-      </p>
       <div className="flex flex-wrap justify-center mt-12">
         <div className="p-2 w-full lg:w-1/2 flex flex-col items-center">
           <img
@@ -59,9 +56,7 @@ const Lps = () => {
             </div>
           ))}
           <div className="flex justify-center ">
-            {/* <Link to={"/Em-Breve"} className="primary-btn text-white">
-              Começe Agora
-            </Link> */}
+
           </div>
         </div>
       </div>

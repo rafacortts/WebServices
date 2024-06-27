@@ -23,7 +23,7 @@ const features = [
 
 const Kiwify = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-8">
+    <div className="flex flex-col items-center justify-center min-h-screen py-8">
       <h1 className="text-4xl mb-2 text-center">
         A WebServices tem a melhor tecnologia
       </h1>
@@ -37,7 +37,7 @@ const Kiwify = () => {
             key={index}
             className="bg-white p-6 rounded-md shadow-lg text-center border-2 w-56 h-56 flex flex-col items-center justify-center"
           >
-            <div className="text-4xl mb-4 text-primaryColor">{feature.icon}</div>
+            <div className="text-5xl mb-4 text-primaryColor">{feature.icon}</div>
             <p className="text-lg">{feature.text}</p>
           </div>
         ))}
