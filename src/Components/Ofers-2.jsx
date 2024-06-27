@@ -52,7 +52,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <div className="relative pb-9/16 mb-8 w-full" style={{ paddingBottom: "56.25%" }}>
-                <iframe
+                {/* <iframe
                   src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                   title="YouTube video player"
                   frameBorder="0"
@@ -60,7 +60,7 @@ const Hero = () => {
                   allowFullScreen
                   className="absolute top-0 left-0 w-full h-full rounded-md shadow-md"
                   aria-label="YouTube video player"
-                ></iframe>
+                ></iframe> */}
               </div>
             </motion.div>
           </div>

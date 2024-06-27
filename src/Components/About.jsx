@@ -13,14 +13,7 @@ const About = () => {
           Confie em nós para levar seu negócio ao próximo nível.
         </p>
         <div className="relative pb-9/16 mb-8 w-full" style={{ paddingBottom: '56.25%' }}>
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="absolute top-0 left-0 w-full h-full rounded-md shadow-md"
-          ></iframe>
+        
         </div>
       </div>
     </div>
