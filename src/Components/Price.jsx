@@ -76,7 +76,7 @@ const Price = () => {
         {Packs.map(({ nome, descricao, Mensal, Anual, beneficios }, index) => (
           <div
             key={index}
-            className="border py-10 md:px-6 px-4 rounded-lg shadow-lg"
+            className="border py-10 md:px-6 px-4 rounded-lg"
           >
             <h3 className="text-3xl font-bold text-center">{nome}</h3>
             <p className="text-center my-5">{descricao}</p>

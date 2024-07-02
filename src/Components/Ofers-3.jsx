@@ -35,7 +35,7 @@ const Kiwify = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-md shadow-lg text-center border-2 w-56 h-56 flex flex-col items-center justify-center"
+            className="bg-white p-6 rounded-md  text-center border-2 w-56 h-56 flex flex-col items-center justify-center"
           >
             <div className="text-5xl mb-4 text-primaryColor">{feature.icon}</div>
             <p className="text-lg">{feature.text}</p>

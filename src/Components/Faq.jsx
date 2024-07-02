@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { CSSTransition } from "react-transition-group";
-import "./FAQ.css"; // Certifique-se de importar o arquivo CSS
+import "./FAQ.css";
 import { Link } from "react-router-dom";
 
 const FAQ = () => {
@@ -39,11 +40,11 @@ const FAQ = () => {
         "A taxa para vendas realizadas pelos WebServices varia de acordo com o plano escolhido. Consulte nossos planos para mais detalhes sobre as taxas aplicáveis.",
     },
     {
-        number: "06",
-        question: "Qual a taxa para vendas realizadas pelos WebServices?",
-        answer:
-          "A taxa para vendas realizadas pelos WebServices varia de acordo com o plano escolhido. Consulte nossos planos para mais detalhes sobre as taxas aplicáveis.",
-      },
+      number: "07",
+      question: "Qual a taxa para vendas realizadas pelos WebServices?",
+      answer:
+        "A taxa para vendas realizadas pelos WebServices varia de acordo com o plano escolhido. Consulte nossos planos para mais detalhes sobre as taxas aplicáveis.",
+    },
   ];
 
   const toggleQuestion = (index) => {
@@ -62,7 +63,9 @@ const FAQ = () => {
                 onClick={() => toggleQuestion(index)}
               >
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold  mb-2">{question.number}</span>
+                  <span className="text-2xl font-bold  mb-2">
+                    {question.number}
+                  </span>
                   <h3 className="text-lg ">{question.question}</h3>
                 </div>
                 <div className="ml-auto">
@@ -87,10 +90,11 @@ const FAQ = () => {
           ))}
         </div>
         <div className="flex justify-center mt-8">
-          <Link to={"/Em-Breve"}
-            className="second-btn  py-2 px-4 rounded-full"
+          <Link
+            to= "/Em-Breve"
+            className="second-btn  flex items-center gap-2"
           >
-            Acesse nossa Central de Ajuda ao Cliente
+            Central De Ajuda <FaArrowRight className="ml-1" />
           </Link>
         </div>
       </div>
