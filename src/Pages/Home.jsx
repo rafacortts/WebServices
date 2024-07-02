@@ -5,11 +5,13 @@ import Garantias from "../Components/Garantias";
 import React from "react";
 import Services from "../Components/Serviços";
 import CookieConsent from "react-cookie-consent";
-import Ofers from "../Components/Ofers"
-import Ofers2 from "../Components/Ofers-2"
-import Ofers3 from "../Components/Ofers-3"
-import Ofers4 from "../Components/ofers-4"
-import MyFooter from "../Components/Footer"
+import Ofers from "../Components/Ofers";
+import Ofers2 from "../Components/Ofers-2";
+import Ofers3 from "../Components/Ofers-3";
+import Ofers4 from "../Components/ofers-4";
+import Faq from "../Components/Faq";
+import Price from "../Components/Price";
+import MyFooter from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -19,11 +21,15 @@ const Home = () => {
       <Services />
       <Leads />
       <Garantias />
-      <Ofers/>
-      <Ofers2/>
-      <Ofers3/>
-      <Ofers4/>
-      <MyFooter/>
+      <Ofers />
+      <Ofers2 />
+      <Ofers3 />
+      <Ofers4 />
+      <div id="faq">
+        <Faq />
+      </div>
+      <Price />
+      <MyFooter />
       <CookieConsent
         location="none"
         buttonText="Aceitar Todos"
@@ -34,8 +40,11 @@ const Home = () => {
         expires={15}
         disableStyles={true}
       >
-        Este site usa cookies para melhorar a experiência do usuário. Ao clicar em “Aceitar todos”, você concorda com a nossa 
-        <a href="/Privacidade" className="underline" style={popupStyles.link}>Política de Privacidade</a>
+        Este site usa cookies para melhorar a experiência do usuário. Ao clicar
+        em “Aceitar todos”, você concorda com a nossa
+        <a href="/Privacidade" className="underline" style={popupStyles.link}>
+          Política de Privacidade
+        </a>
       </CookieConsent>
     </div>
   );
@@ -64,7 +73,8 @@ const popupStyles = {
     flexWrap: "wrap",
   },
   acceptButton: {
-    backgroundImage: "linear-gradient(to right, var(--primaryColor), var(--secondColor))",
+    backgroundImage:
+      "linear-gradient(to right, var(--primaryColor), var(--secondColor))",
     transitionDuration: "300ms",
     padding: "0.5rem 1.5rem",
     borderRadius: "9999px",
@@ -77,7 +87,6 @@ const popupStyles = {
   link: {
     color: "#000",
     textDecoration: "underline",
-  
   },
   // Media queries for different screen sizes
   "@media (min-width: 768px)": {

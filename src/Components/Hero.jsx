@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import HomeImg from "../Img/HeroImageBG.png"
+
 import { MdOndemandVideo } from "react-icons/md";
 
 
 
 const Hero = () => {
   return (
-    <div className="mt-12 border-b border-slate-300 ">
+    <div className="mt-12  ">
       <div className="sm:py-0 sm:mt-0 container">
         <div className="mx-auto px-4 flex">
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 min-h-[500px] items-center">
@@ -57,7 +57,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <img
-                src={HomeImg}
+                src=""
                 alt="Hero"
                 className=" w-full h-full"
               />

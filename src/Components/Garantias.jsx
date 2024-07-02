@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineCheckCircle } from "react-icons/ai";
+import {  FaCheckCircle } from "react-icons/fa";
 
 
 const Lps = () => {
@@ -29,7 +29,7 @@ const Lps = () => {
   return (
     <div className="container mx-auto px-4 mt-12">
       <h2 className="text-4xl text-center">
-        Ter sua loja online é mais simples do que você imagina
+        Ter sua loja online é mais <span className="bg-clip-text text-transparent bg-gradient-to-r from-primaryColor to-secondColor">simples </span>do que você imagina
       </h2>
       <div className="flex flex-wrap justify-center mt-12">
         <div className="p-2 w-full lg:w-1/2 flex flex-col items-center">
@@ -42,7 +42,7 @@ const Lps = () => {
         <div className="pt-12 w-full lg:w-1/2">
           {beneficios.map(({ titulo, descricao }, index) => (
             <div key={index} className="flex items-start mb-8">
-              <AiOutlineCheckCircle
+              <FaCheckCircle
                 size={24}
                 className="mr-4 mb-2 text-green-500"
                 aria-label="Check icon"

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import Logo from "../Img/Logo.png";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,9 +28,8 @@ const Menu = () => {
   const navItems = [
     { link: "Início", path: "/" },
     { link: "Serviços", path: "/Em-Breve" },
-    { link: "Projetos", path: "/Em-Breve" },
-    { link: "Sobre", path: "/Saiba-Mais" },
-    { link: "FAQ", path: "/Privacidade" },
+    { link: "FAQ", path: '#faq' },
+    { link: "Privacidade", path: "/Privacidade" },
   ];
 
   const handleWhatsAppRedirect = () => {
@@ -52,15 +50,15 @@ const Menu = () => {
             : ""
         }`}
       >
-        <div className="flex justify-between items-center text-base gap-8">
+        <div className="flex justify-between items-center text-base">
           <Link
             to={"/"}
             className="text-2xl flex items-center space-x-3 text-center"
           >
-            <img src={Logo} alt="Logo" className="h-10" />{" "}
-            {/* Adicione o logo aqui */}
+            {/* <img src="" alt="Logo" className="h-10" />{" "} */}
+            <a href="">WebServices</a>
           </Link>
-          <ul className="md:flex space-x-12 hidden">
+          <ul className="md:flex space-x-12  hidden">
             {navItems.map(({ link, path }) => (
               <Link
                 key={path}

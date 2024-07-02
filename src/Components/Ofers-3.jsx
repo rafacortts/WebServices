@@ -25,7 +25,7 @@ const Kiwify = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-8">
       <h1 className="text-4xl mb-2 text-center">
-        A WebServices tem a melhor tecnologia
+        A WebServices tem a <span className="bg-clip-text text-transparent bg-gradient-to-r from-primaryColor to-secondColor">melhor tecnologia</span> 
       </h1>
       <p className="mb-4 text-center">
         Nossa plataforma é simples e fácil de usar. Crie uma conta e comece a

@@ -1,5 +1,7 @@
 // src/components/Testimonials.js
 import React from "react";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 const testimonials = [
   {
@@ -22,7 +24,9 @@ const testimonials = [
 const Header = () => {
   return (
     <header className="p-8 bg-gradient-to-r from-primaryColor to-secondColor text-white text-center py-10">
-      <h1 className="text-3xl font-bold">Veja o que nossos clientes estão falando</h1>
+      <h1 className="text-3xl font-bold">
+        Veja o que nossos clientes estão falando
+      </h1>
     </header>
   );
 };
@@ -39,10 +43,23 @@ const Testimonials = () => {
               src={testimonial.image}
               alt={`Foto de ${testimonial.name}`}
             />
-            <h3 className="mt-4 text-lg font-semibold text-center mb-3">{testimonial.name}</h3>
-            <p className="mt-2 text-sm text-gray-600 text-center">{testimonial.username}</p>
+            <h3 className="mt-4 text-lg font-semibold text-center  mb-3">
+              {testimonial.name}
+            </h3>
+            <p className="mt-2 text-sm text-gray-600 text-center">
+              {testimonial.username}
+            </p>
           </div>
         ))}
+      </div>
+      <div className="flex items-center justify-center">
+        <Link
+          to="/Login"
+          className=" primary-btn flex items-center text-white  gap-2"
+          aria-label="Começe Agora"
+        >
+          Começe Agora <FaArrowRight className="ml-1" />
+        </Link>
       </div>
     </div>
   );
