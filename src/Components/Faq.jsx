@@ -62,8 +62,8 @@ const FAQ = () => {
                 onClick={() => toggleQuestion(index)}
               >
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold mb-2">{question.number}</span>
-                  <h3 className="text-lg font-semibold">{question.question}</h3>
+                  <span className="text-2xl font-bold  mb-2">{question.number}</span>
+                  <h3 className="text-lg ">{question.question}</h3>
                 </div>
                 <div className="ml-auto">
                   {activeQuestion === index ? (

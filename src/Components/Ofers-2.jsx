@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="mt-6 bg-gradient-to-r from-primaryColor to-secondColor ">
+    <div className="mt-6  ">
       <div className="container mx-auto py-6">
         <div className="px-4 flex justify-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 min-h-[500px] items-center">
@@ -16,7 +16,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h1 className="text-white text-4xl font-semibold mb-4">
+                <h1 className=" text-4xl font-semibold mb-4">
                 Tenha seu própio sistema de assinatura
                 </h1>
               </motion.h1>
@@ -24,7 +24,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-white"
+                className=""
               >
                 Aumente suas vendas personalizando planos com diversas
                 frequências, tudo para atender às necessidades específicas dos
@@ -38,7 +38,7 @@ const Hero = () => {
               >
                 <Link 
                   to="/Login" 
-                  className="third-btn text-white flex items-center gap-2"
+                  className="second-btn  flex items-center gap-2"
                   aria-label="Começe Agora"
                 >
                   Começe Agora <FaArrowRight className="ml-1" />

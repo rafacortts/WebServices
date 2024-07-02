@@ -23,10 +23,13 @@ const testimonials = [
 
 const Header = () => {
   return (
-    <header className="p-8 bg-gradient-to-r from-primaryColor to-secondColor text-white text-center py-10">
+    <header className=" text-center py-10">
       <h1 className="text-3xl font-bold">
         Veja o que nossos clientes estão falando
       </h1>
+      <p>
+      Confira alguns depoimentos em vídeo de nossos clientes:
+      </p>
     </header>
   );
 };
